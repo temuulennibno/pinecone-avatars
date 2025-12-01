@@ -1,0 +1,65 @@
+{
+  "name": "pinecone-avatars",
+  "version": "0.1.0",
+  "description": "A customizable React avatar picker library with 60+ unique combinations",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build",
+    "demo": "npm run build && cd demo && npm install && npm run dev",
+    "demo:install": "cd demo && npm install"
+  },
+  "keywords": [
+    "react",
+    "avatar",
+    "picker",
+    "component",
+    "svg",
+    "profile",
+    "user",
+    "generator",
+    "customizable",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/pinecone-avatars#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/pinecone-avatars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pinecone-avatars/issues"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
